@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-)z668c-4w5)q33@3dy!ou00&n6yg953uylx-+!=#b-ze935_+h
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "yourdomain.com",  ]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost",".vercel.app" ]
 
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
@@ -39,6 +39,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOW_ALL_ORIGINS = True
+WSGI_APPLICATION = 'Blood_Donation.wsgi.app'
 
 # CLOUDINARY_STORAGE = {
 #     'CLOUD_NAME': 'dbd5yj7or',
@@ -99,6 +100,8 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
